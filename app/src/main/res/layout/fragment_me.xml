@@ -1,16 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@color/white"
+    android:fillViewport="true">
 
-    <FrameLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:background="@mipmap/img_top_me">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/img_top_me">
 
-    </FrameLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/shape_normal_white_radius"
+                android:padding="20dp">
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+                <com.cbsd.investment.view.CircleImageView
+                    android:id="@+id/meAvatarIv"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@mipmap/icon_default_avatar" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/meUsernameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/meAvatarIv"
+                    app:layout_constraintBottom_toTopOf="@id/mePlatformAccountTv"
+                    app:layout_constraintStart_toEndOf="@id/meAvatarIv"
+                    app:layout_constraintTop_toTopOf="@id/meAvatarIv"
+                    tools:text="张萌萌" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mePhoneTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/meUsernameTv"
+                    app:layout_constraintStart_toEndOf="@id/meUsernameTv"
+                    tools:text="13036364377" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mePlatformAccountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#B4B4B4"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/meAvatarIv"
+                    app:layout_constraintTop_toBottomOf="@id/meUsernameTv"
+                    tools:text="平台账号：111000" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableStart="@mipmap/icon_project_declare"
+            android:drawableEnd="@mipmap/icon_right_arrow"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="13dp"
+            android:text="招商项目申报"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_basic_info"
+            android:drawableEnd="@mipmap/icon_right_arrow"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="13dp"
+            android:text="基本信息修改"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_password"
+            android:drawableEnd="@mipmap/icon_right_arrow"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="13dp"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meLoginOutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/selector_normal_red_button"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
