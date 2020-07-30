@@ -20,4 +20,14 @@
         <item name="android:textSize">14dp</item>
         <item name="android:textColorHint">#FF999999</item>
     </style>
+    <style name="homecard_textblcak">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="homecard_textgray">
+        <item name="android:textColor">@color/bottom_home_gray</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>
