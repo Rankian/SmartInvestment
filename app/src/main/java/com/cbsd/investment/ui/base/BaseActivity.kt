@@ -1,4 +1,4 @@
-package com.cbsd.investment.ui.activity
+package com.cbsd.investment.ui.base
 
 
 import android.content.Intent

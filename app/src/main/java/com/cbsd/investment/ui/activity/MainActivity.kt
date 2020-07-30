@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.RadioGroup
 import androidx.fragment.app.Fragment
 import com.cbsd.investment.R
+import com.cbsd.investment.ui.base.BaseActivity
 import com.cbsd.investment.ui.fragment.HomeFragment
 import com.cbsd.investment.ui.fragment.JobFragment
 import com.cbsd.investment.ui.fragment.MeFragment
