@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cbsd.investment.ui.fragment.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/jobFragment"
+        android:name="com.cbsd.investment.ui.fragment.JobFragment"
+        android:label="任务"
+        tools:layout="@layout/fragment_job" />
+    <fragment
+        android:id="@+id/meFragment"
+        android:name="com.cbsd.investment.ui.fragment.MeFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_me" />
+
+</navigation>
